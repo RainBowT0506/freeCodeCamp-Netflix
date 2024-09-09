@@ -11,6 +11,7 @@
 		A606871D2C8D94B6003646EE /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606871C2C8D94B6003646EE /* UpcomingViewController.swift */; };
 		A606871F2C8D94FA003646EE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606871E2C8D94FA003646EE /* SearchViewController.swift */; };
 		A60687212C8D9532003646EE /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60687202C8D9532003646EE /* DownloadsViewController.swift */; };
+		A60687292C8E98EE003646EE /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60687282C8E98EE003646EE /* CollectionTableViewCell.swift */; };
 		A69CC75B2C6611C40093850C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69CC75A2C6611C40093850C /* AppDelegate.swift */; };
 		A69CC75D2C6611C40093850C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69CC75C2C6611C40093850C /* SceneDelegate.swift */; };
 		A69CC75F2C6611C40093850C /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69CC75E2C6611C40093850C /* MainTabBarViewController.swift */; };
@@ -23,6 +24,7 @@
 		A606871C2C8D94B6003646EE /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		A606871E2C8D94FA003646EE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A60687202C8D9532003646EE /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		A60687282C8E98EE003646EE /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		A69CC7572C6611C40093850C /* freeCodeCamp-Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "freeCodeCamp-Netflix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69CC75A2C6611C40093850C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69CC75C2C6611C40093850C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,42 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		A60687222C8E97B9003646EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A60687282C8E98EE003646EE /* CollectionTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A60687242C8E97DD003646EE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A60687252C8E9804003646EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A60687262C8E988A003646EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A60687272C8E989B003646EE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		A69CC74E2C6611C40093850C = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +111,11 @@
 		A69CC7592C6611C40093850C /* freeCodeCamp-Netflix */ = {
 			isa = PBXGroup;
 			children = (
+				A60687272C8E989B003646EE /* Managers */,
+				A60687262C8E988A003646EE /* Resources */,
+				A60687222C8E97B9003646EE /* Views */,
+				A60687242C8E97DD003646EE /* ViewModels */,
+				A60687252C8E9804003646EE /* Models */,
 				A60687192C8D93C6003646EE /* Controllers */,
 				A69CC75A2C6611C40093850C /* AppDelegate.swift */,
 				A69CC75C2C6611C40093850C /* SceneDelegate.swift */,
@@ -161,6 +204,7 @@
 				A69CC75B2C6611C40093850C /* AppDelegate.swift in Sources */,
 				A606871D2C8D94B6003646EE /* UpcomingViewController.swift in Sources */,
 				A69CC75D2C6611C40093850C /* SceneDelegate.swift in Sources */,
+				A60687292C8E98EE003646EE /* CollectionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
