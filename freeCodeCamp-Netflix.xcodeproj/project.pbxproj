@@ -12,6 +12,7 @@
 		A606871F2C8D94FA003646EE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606871E2C8D94FA003646EE /* SearchViewController.swift */; };
 		A60687212C8D9532003646EE /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60687202C8D9532003646EE /* DownloadsViewController.swift */; };
 		A60687292C8E98EE003646EE /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60687282C8E98EE003646EE /* CollectionViewTableViewCell.swift */; };
+		A62F1B402C8EC3FF0012EF43 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F1B3F2C8EC3FF0012EF43 /* HeroHeaderUIView.swift */; };
 		A69CC75B2C6611C40093850C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69CC75A2C6611C40093850C /* AppDelegate.swift */; };
 		A69CC75D2C6611C40093850C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69CC75C2C6611C40093850C /* SceneDelegate.swift */; };
 		A69CC75F2C6611C40093850C /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69CC75E2C6611C40093850C /* MainTabBarViewController.swift */; };
@@ -25,6 +26,7 @@
 		A606871E2C8D94FA003646EE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A60687202C8D9532003646EE /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		A60687282C8E98EE003646EE /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		A62F1B3F2C8EC3FF0012EF43 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		A69CC7572C6611C40093850C /* freeCodeCamp-Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "freeCodeCamp-Netflix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69CC75A2C6611C40093850C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69CC75C2C6611C40093850C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		A60687222C8E97B9003646EE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A62F1B3F2C8EC3FF0012EF43 /* HeroHeaderUIView.swift */,
 				A60687282C8E98EE003646EE /* CollectionViewTableViewCell.swift */,
 			);
 			path = Views;
@@ -200,6 +203,7 @@
 				A606871F2C8D94FA003646EE /* SearchViewController.swift in Sources */,
 				A606871B2C8D9463003646EE /* HomeViewController.swift in Sources */,
 				A60687212C8D9532003646EE /* DownloadsViewController.swift in Sources */,
+				A62F1B402C8EC3FF0012EF43 /* HeroHeaderUIView.swift in Sources */,
 				A69CC75F2C6611C40093850C /* MainTabBarViewController.swift in Sources */,
 				A69CC75B2C6611C40093850C /* AppDelegate.swift in Sources */,
 				A606871D2C8D94B6003646EE /* UpcomingViewController.swift in Sources */,
