@@ -18,6 +18,8 @@
 		A69CC75F2C6611C40093850C /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69CC75E2C6611C40093850C /* MainTabBarViewController.swift */; };
 		A69CC7642C6611C50093850C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69CC7632C6611C50093850C /* Assets.xcassets */; };
 		A69CC7672C6611C50093850C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A69CC7662C6611C50093850C /* Base */; };
+		A6FBE2722C8FE9EF00F03B98 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FBE2712C8FE9EF00F03B98 /* APICaller.swift */; };
+		A6FBE2742C90172E00F03B98 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FBE2732C90172E00F03B98 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		A69CC7632C6611C50093850C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A69CC7662C6611C50093850C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A69CC7682C6611C50093850C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FBE2712C8FE9EF00F03B98 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		A6FBE2732C90172E00F03B98 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		A60687252C8E9804003646EE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A6FBE2732C90172E00F03B98 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 		A60687272C8E989B003646EE /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				A6FBE2712C8FE9EF00F03B98 /* APICaller.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -203,11 +209,13 @@
 				A606871F2C8D94FA003646EE /* SearchViewController.swift in Sources */,
 				A606871B2C8D9463003646EE /* HomeViewController.swift in Sources */,
 				A60687212C8D9532003646EE /* DownloadsViewController.swift in Sources */,
+				A6FBE2722C8FE9EF00F03B98 /* APICaller.swift in Sources */,
 				A62F1B402C8EC3FF0012EF43 /* HeroHeaderUIView.swift in Sources */,
 				A69CC75F2C6611C40093850C /* MainTabBarViewController.swift in Sources */,
 				A69CC75B2C6611C40093850C /* AppDelegate.swift in Sources */,
 				A606871D2C8D94B6003646EE /* UpcomingViewController.swift in Sources */,
 				A69CC75D2C6611C40093850C /* SceneDelegate.swift in Sources */,
+				A6FBE2742C90172E00F03B98 /* Movie.swift in Sources */,
 				A60687292C8E98EE003646EE /* CollectionViewTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
