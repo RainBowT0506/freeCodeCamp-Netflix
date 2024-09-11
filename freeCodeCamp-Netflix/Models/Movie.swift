@@ -23,9 +23,9 @@ struct Movie: Codable {
     let original_title: String?
     let overview: String
     let poster_path: String?
-    let media_type: MediaType?
+    let media_type: String?
     let adult: Bool
-    let original_language: OriginalLanguage?
+    let original_language: String?
     let genre_ids: [Int]?
     let popularity: Double
     let release_date: String?
@@ -37,15 +37,4 @@ struct Movie: Codable {
     let first_air_date: String?
     let origin_country: [String]?
 
-}
-
-enum MediaType: String, Codable {
-    case movie
-    case tv
-}
-
-enum OriginalLanguage: String, Codable {
-    case en
-    case ja
-    case ko
 }
