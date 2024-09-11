@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct TrendingMoviesResponse: Codable {
+struct TrendingTitleResponse: Codable {
     let page: Int
-    let results: [Movie]
+    let results: [Title]
     let total_pages: Int?
     let total_results: Int?
 
  
 }
 
-struct Movie: Codable {
+struct Title: Codable {
     let backdrop_path: String?
     let id: Int
     let title: String?
