@@ -10,6 +10,7 @@ import Foundation
 struct Constants{
     static let API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4YzhmNWViMmIzY2I5MGI1OTJjZTcyMDE2MTdlMjlhOCIsIm5iZiI6MTcyNTkzNjMyOS4zMjI1MjMsInN1YiI6IjVmMmU2ZThhNWMzMjQ3MDAzNTgzNmFjNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qf31ohi6yG7vDSpf0bWsxMIpiQ1NgE82ARabB-JVRVY"
     static let BASE_URL = "https://api.themoviedb.org"
+    static let BASE_IMAGE_URL = "https://image.tmdb.org/t/p/w500"
 }
 
 enum APIError: Error{
