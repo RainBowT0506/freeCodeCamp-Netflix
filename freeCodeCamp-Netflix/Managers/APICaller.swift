@@ -186,27 +186,29 @@ class APICaller {
         task.resume()
     }
     
-    func getMovie(with query: String ) {
+    func getMovie(with query: String, completion: @escaping (Result<VideoElement, Error>) -> Void) {
         guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else{
             return
         }
-        guard let url = URL(string: "\(Constants.BASE_URL_YOUTUBE)q=\(query)&key=\(Constants.API_KEY_YOUTUBE)") else { return }
+        guard let url = URL(string: "\(Constants.BASE_URL_YOUTUBE)q=\(query)&type=video&key=\(Constants.API_KEY_YOUTUBE)") else { return }
         
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        // 將 API_KEY 放入 Authorization 標頭
-//        request.setValue("Bearer \(Constants.API_KEY_YOUTUBE)", forHTTPHeaderField: "Authorization")
-        
-        let task = URLSession.shared.dataTask(with: request) { data, _, error in
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
             guard let data = data, error == nil else {
                 return
             }
             
+//            do {
+//                let results = try JSONSerialization.jsonObject(with: data,options:  .fragmentsAllowed)
+//                print(results)
+//            } catch {
+//                print(error)
+//            }
+            
             do {
-                let results = try JSONSerialization.jsonObject(with: data,options:  .fragmentsAllowed)
-                print(results)
+                let results = try JSONDecoder().decode(YoutubeSearchResponse.self, from: data)
+                completion(.success(results.items[0]))
             } catch {
-                print(error)
+                completion(.failure(APIError.failedTogetData))
             }
         }
         task.resume()
