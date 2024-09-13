@@ -11,6 +11,8 @@ struct Constants{
     static let API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4YzhmNWViMmIzY2I5MGI1OTJjZTcyMDE2MTdlMjlhOCIsIm5iZiI6MTcyNTkzNjMyOS4zMjI1MjMsInN1YiI6IjVmMmU2ZThhNWMzMjQ3MDAzNTgzNmFjNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qf31ohi6yG7vDSpf0bWsxMIpiQ1NgE82ARabB-JVRVY"
     static let BASE_URL = "https://api.themoviedb.org"
     static let BASE_IMAGE_URL = "https://image.tmdb.org/t/p/w500"
+    static let API_KEY_YOUTUBE = "AIzaSyC5hTyLaflVBzgEu4qEZE10kJOY0gGVDbE"
+    static let BASE_URL_YOUTUBE = "https://www.googleapis.com/youtube/v3/search?"
 }
 
 enum APIError: Error{
@@ -179,6 +181,32 @@ class APICaller {
                 completion(.success(results.results))
             } catch {
                 completion(.failure(APIError.failedTogetData))
+            }
+        }
+        task.resume()
+    }
+    
+    func getMovie(with query: String ) {
+        guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else{
+            return
+        }
+        guard let url = URL(string: "\(Constants.BASE_URL_YOUTUBE)q=\(query)&key=\(Constants.API_KEY_YOUTUBE)") else { return }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        // 將 API_KEY 放入 Authorization 標頭
+//        request.setValue("Bearer \(Constants.API_KEY_YOUTUBE)", forHTTPHeaderField: "Authorization")
+        
+        let task = URLSession.shared.dataTask(with: request) { data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            
+            do {
+                let results = try JSONSerialization.jsonObject(with: data,options:  .fragmentsAllowed)
+                print(results)
+            } catch {
+                print(error)
             }
         }
         task.resume()
