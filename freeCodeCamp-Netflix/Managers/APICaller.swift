@@ -133,4 +133,27 @@ class APICaller {
         }
         task.resume()
     }
-}
+    
+    func getDiscoverMovies(completion: @escaping (Result<[Title], Error>) -> Void) {
+        guard let url = URL(string: "\(Constants.BASE_URL)/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc") else { return }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        // 將 API_KEY 放入 Authorization 標頭
+        request.setValue("Bearer \(Constants.API_KEY)", forHTTPHeaderField: "Authorization")
+        
+        let task = URLSession.shared.dataTask(with: request) { data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            
+            do {
+                let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
+                completion(.success(results.results))
+            } catch {
+                completion(.failure(APIError.failedTogetData))
+            }
+        }
+        task.resume()
+    }
+    }
