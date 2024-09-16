@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A605062D2C97CDAB00BCEF1A /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605062C2C97CDAB00BCEF1A /* TitlePreviewViewController.swift */; };
+		A605062F2C97E82600BCEF1A /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605062E2C97E82600BCEF1A /* TitlePreviewViewModel.swift */; };
 		A606871B2C8D9463003646EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606871A2C8D9463003646EE /* HomeViewController.swift */; };
 		A606871D2C8D94B6003646EE /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606871C2C8D94B6003646EE /* UpcomingViewController.swift */; };
 		A606871F2C8D94FA003646EE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606871E2C8D94FA003646EE /* SearchViewController.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A605062C2C97CDAB00BCEF1A /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
+		A605062E2C97E82600BCEF1A /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
 		A606871A2C8D9463003646EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A606871C2C8D94B6003646EE /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		A606871E2C8D94FA003646EE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				A6FBE2822C9170EA00F03B98 /* TitleViewModel.swift */,
+				A605062E2C97E82600BCEF1A /* TitlePreviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				A6B2CD842C940F440025227E /* SearchResultsViewController.swift */,
+				A605062C2C97CDAB00BCEF1A /* TitlePreviewViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -264,7 +270,9 @@
 				A6FBE2762C9021BF00F03B98 /* Extensions.swift in Sources */,
 				A6E4A40A2C944615009DE67D /* Video.swift in Sources */,
 				A606871D2C8D94B6003646EE /* UpcomingViewController.swift in Sources */,
+				A605062F2C97E82600BCEF1A /* TitlePreviewViewModel.swift in Sources */,
 				A69CC75D2C6611C40093850C /* SceneDelegate.swift in Sources */,
+				A605062D2C97CDAB00BCEF1A /* TitlePreviewViewController.swift in Sources */,
 				A6FBE2742C90172E00F03B98 /* Title.swift in Sources */,
 				A60687292C8E98EE003646EE /* CollectionViewTableViewCell.swift in Sources */,
 				A6FBE2832C9170EA00F03B98 /* TitleViewModel.swift in Sources */,
